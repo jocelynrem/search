@@ -1,0 +1,17 @@
+{
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.formatOnSave": true
+},
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+},
+"[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+},
+
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "file-icons"
+}
