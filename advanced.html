@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Search</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -14,9 +17,26 @@
         <div class="logo-main">
             <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span><span>-</span><span>i</span><span>s</span><span>h</span>
         </div>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+        <form action="https://www.google.com/search" method="get">
+            <div class="form-group">
+                <label for="as_q">Find pages with… “all these words:”</label>
+                <input type="text" id="as_q" name="as_q" class="search-bar">
+            </div>
+            <div class="form-group">
+                <label for="as_epq">Find pages with… “this exact word or phrase:”</label>
+                <input type="text" id="as_epq" name="as_epq" class="search-bar">
+            </div>
+            <div class="form-group">
+                <label for="as_oq">Find pages with… “any of these words:”</label>
+                <input type="text" id="as_oq" name="as_oq" class="search-bar">
+            </div>
+            <div class="form-group">
+                <label for="as_eq">Find pages with… “none of these words:”</label>
+                <input type="text" id="as_eq" name="as_eq" class="search-bar">
+            </div>
+            <div class="button-group">
+                <input type="submit" value="Advanced Search" class="search-button">
+            </div>
         </form>
     </div>
 </body>
