@@ -8,10 +8,11 @@ body {
   margin: 0;
 }
 
-form {
+.form-group,
+.button-group {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 input[type=text] {
@@ -26,21 +27,28 @@ input[type=text] {
 }
 
 input[type=submit] {
-  width: 140px;
-  height: 36px;
-  background-color: #f8f9fa;
+  width: auto;
+  padding: 10px 20px;
+  margin-right: 10px;
   border: 1px solid #dfe1e5;
+  background-color: #f8f9fa;
   border-radius: 4px;
-  font-size: 14px;
-  color: #5f6368;
   cursor: pointer;
 }
 
+input[type=submit]:hover {
+  background-color: #f0f0f0;
+}
+
 .top-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
-  padding: 20px;
+  background-color: #f8f9fa;
 }
 
 .top-nav a {
@@ -83,10 +91,10 @@ input[type=submit] {
   color: #ea4335;
 }
 .logo-main span:nth-child(7) {
-  color: #fbbc05;
+  color: #4285f4;
 }
 .logo-main span:nth-child(8) {
-  color: #4285f4;
+  color: #fbbc05;
 }
 .logo-main span:nth-child(9) {
   color: #34a853;

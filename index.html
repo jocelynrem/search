@@ -14,12 +14,17 @@
 
     <div class="search-container">
         <div class="logo-main">
-            <span>F</span><span>a</span><span>k</span><span>e</span><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+            <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span><span>-</span><span>i</span><span>s</span><span>h</span>
         </div>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <form action="https://www.google.com/search" method="get">
+            <div class="form-group">
+                <input type="text" name="q" class="search-bar">
+            </div>
+            <div class="button-group">
+                <input type="submit" value="Google Search">
+                <input type="submit" name="btnI" value="I'm Feeling Lucky"
+                    onclick="this.form.action='https://www.google.com/search?btnI=I';">
+            </div>
     </div>
 </body>
 
