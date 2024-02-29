@@ -7,6 +7,8 @@
     <title>Search</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,7 +23,12 @@
         </div>
         <form action="https://www.google.com/search" method="get">
             <div class="form-group">
-                <input type="text" name="q" class="search-bar">
+                <div class="search-box">
+                    <span class="material-symbols-outlined search-icon">
+                        search
+                    </span>
+                    <input type="text" placeholder="" aria-label="Search">
+                </div>
             </div>
             <div class="button-group">
                 <input type="submit" value="Google Search">
