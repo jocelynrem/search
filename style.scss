@@ -1,0 +1,151 @@
+// style.scss
+
+$body-bg: #f2f2f2;
+$input-bg: #fff;
+$input-border: #dfe1e5;
+$button-bg: #f8f9fa;
+$button-hover-bg: #f0f0f0;
+$font-color: #5f6368;
+
+body {
+  background-color: $body-bg;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type='text'] {
+  width: 480px;
+  height: 44px;
+  padding: 0 16px;
+  margin-bottom: 20px;
+  background-color: $input-bg;
+  border: 1px solid $input-border;
+  border-radius: 24px;
+  font-size: 16px;
+}
+
+input[type='submit'] {
+  width: 140px;
+  height: 36px;
+  background-color: $button-bg;
+  border: 1px solid $input-border;
+  border-radius: 4px;
+  font-size: 14px;
+  color: $font-color;
+  cursor: pointer;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5f6368;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.logo {
+  font-family: 'Arial', sans-serif;
+  color: #5f6368;
+  font-size: 28px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  span {
+    font-weight: bold;
+    &:nth-child(1) {
+      color: #4285f4;
+    } // F of FakeGoogle
+    &:nth-child(2) {
+      color: #ea4335;
+    } // a of FakeGoogle
+    &:nth-child(3) {
+      color: #fbbc05;
+    } // k of FakeGoogle
+    &:nth-child(4) {
+      color: #4285f4;
+    } // e of FakeGoogle
+    &:nth-child(5) {
+      color: #34a853;
+    } // G of FakeGoogle
+    &:nth-child(6) {
+      color: #ea4335;
+    } // o of FakeGoogle
+    &:nth-child(7) {
+      color: #fbbc05;
+    } // o of FakeGoogle
+    &:nth-child(8) {
+      color: #4285f4;
+    } // g of FakeGoogle
+    &:nth-child(9) {
+      color: #34a853;
+    } // l of FakeGoogle
+    &:nth-child(10) {
+      color: #ea4335;
+    } // e of FakeGoogle
+  }
+}
+
+.logo-main {
+  display: flex;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 72px; // Larger size for the main logo
+  margin-bottom: 20px;
+  span {
+    font-weight: bold;
+    &:nth-child(1) {
+      color: #4285f4;
+    }
+    &:nth-child(2) {
+      color: #ea4335;
+    }
+    &:nth-child(3) {
+      color: #fbbc05;
+    }
+    &:nth-child(4) {
+      color: #4285f4;
+    }
+    &:nth-child(5) {
+      color: #34a853;
+    }
+    &:nth-child(6) {
+      color: #ea4335;
+    }
+    &:nth-child(7) {
+      color: #fbbc05;
+    }
+    &:nth-child(8) {
+      color: #4285f4;
+    }
+    &:nth-child(9) {
+      color: #34a853;
+    }
+    &:nth-child(10) {
+      color: #ea4335;
+    }
+  }
+}
