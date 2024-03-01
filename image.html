@@ -7,6 +7,8 @@
     <title>Image Search</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,7 +22,12 @@
         <form action="https://www.google.com/search" method="get">
             <input type="hidden" name="tbm" value="isch">
             <div class="form-group">
-                <input type="text" name="q" class="search-bar" placeholder="Search images">
+                <div class="search-box">
+                    <span class="material-symbols-outlined search-icon">
+                        search
+                    </span>
+                    <input type="text" name="q" class="search-bar" placeholder="">
+                </div>
             </div>
             <div class="button-group">
                 <input type="submit" value="Google Image Search">

@@ -62,7 +62,6 @@ input[type='submit'] {
   padding: 0 16px;
   line-height: 27px;
   min-width: 54px;
-  text-align: center;
   cursor: pointer;
   user-select: none;
 
@@ -201,20 +200,27 @@ a {
 }
 
 // Advanced search specific styles
+.advanced-search-layout,
 .advanced-search-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: 100%;
+  max-width: 600px;
   color: $form-text-color;
   font-size: 13px;
 
   .form-group {
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  label {
+    flex: 2;
+    text-align: left;
   }
 
   input[type='text'] {
-    flex-basis: 55%; // Allocate remaining width to input
+    flex: 4;
     background-color: $input-bg;
     border-radius: 1px;
     border: 1px solid #d9d9d9;
@@ -224,11 +230,15 @@ a {
     padding: 1px 8px;
   }
 
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .search-button {
     background-color: #4285f4;
     color: white;
     border: none;
-    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
@@ -236,7 +246,8 @@ a {
     margin-top: 20px;
 
     &:hover {
-      background-color: #357ae8; // Slightly darker blue on hover
+      background-color: #357ae8;
+      color: white;
     }
   }
 }
@@ -244,7 +255,7 @@ a {
 .advanced-search-title {
   color: $title-color;
   font-size: 20px;
-  margin: 40px 0;
+  margin: 40px 0 20px 0;
 }
 
 .advanced-search-subhead {
@@ -255,9 +266,10 @@ a {
 
 .divider {
   background-color: #ebebeb;
-  height: 1px;
+  height: 2px;
   margin-bottom: 20px;
   width: 100%;
+  border: none;
 }
 
 // Main logo styling (used on the homepage or other pages as needed)

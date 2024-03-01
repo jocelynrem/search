@@ -40,7 +40,6 @@ input[type=submit] {
   padding: 0 16px;
   line-height: 27px;
   min-width: 54px;
-  text-align: center;
   cursor: pointer;
   user-select: none;
 }
@@ -149,19 +148,28 @@ a:hover {
   text-decoration: underline;
 }
 
+.advanced-search-layout,
 .advanced-search-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: 100%;
+  max-width: 600px;
   color: #222222;
   font-size: 13px;
 }
+.advanced-search-layout .form-group,
 .advanced-search-container .form-group {
   margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.advanced-search-layout label,
+.advanced-search-container label {
+  flex: 2;
+  text-align: left;
+}
+.advanced-search-layout input[type=text],
 .advanced-search-container input[type=text] {
-  flex-basis: 55%;
+  flex: 4;
   background-color: #fff;
   border-radius: 1px;
   border: 1px solid #d9d9d9;
@@ -170,25 +178,32 @@ a:hover {
   height: 25px;
   padding: 1px 8px;
 }
+.advanced-search-layout .button-group,
+.advanced-search-container .button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+.advanced-search-layout .search-button,
 .advanced-search-container .search-button {
   background-color: #4285f4;
   color: white;
   border: none;
-  padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   width: auto;
   margin-top: 20px;
 }
+.advanced-search-layout .search-button:hover,
 .advanced-search-container .search-button:hover {
   background-color: #357ae8;
+  color: white;
 }
 
 .advanced-search-title {
   color: #d93025;
   font-size: 20px;
-  margin: 40px 0;
+  margin: 40px 0 20px 0;
 }
 
 .advanced-search-subhead {
@@ -199,9 +214,10 @@ a:hover {
 
 .divider {
   background-color: #ebebeb;
-  height: 1px;
+  height: 2px;
   margin-bottom: 20px;
   width: 100%;
+  border: none;
 }
 
 .logo-main {
@@ -237,16 +253,18 @@ a:hover {
 
 @media (max-width: 600px) {
   body,
-  .form-group,
-  .button-group {
+.form-group,
+.button-group {
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
   }
+
   input[type=text],
-  input[type=submit] {
+input[type=submit] {
     width: 100%;
   }
+
   .logo-main {
     font-size: 48px;
   }
